@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background: linear-gradient(#ffdad5, #fff7f9);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    color: #ff994f;
+}
+
+.contact-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-center {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    background-color: #ffd0d8;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.contact-center-title h2 {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.contact-center-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contacts-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contacts-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contacts-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-center button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+
+@media (max-width: 431px){
+    .contacts-inputs {
+        width: 80vw;
+    }
+
+    .contact-center-title h2 {
+        font-size: 22px;
+    }
+
+}
+
